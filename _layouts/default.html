@@ -10,13 +10,13 @@
 
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
-    <!-- favicon
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
-    Twitter: https://dev.twitter.com/docs/cards/types/summary-card
-    ============================== -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="{{ site.baseurl }}/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+
     <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:site_name" content="{{ site.name }}"/>
     <meta property="og:url" content="{{ site.url }}"/>
@@ -51,7 +51,7 @@
             <li><a href='{{ site.baseurl }}/contact' {% if current[1] == 'contact' %}class='active'{% endif %}>CONTACT</a></li>
             <li><a href='{{ site.baseurl }}/coaching' {% if current[1] == 'coaching' %}class='active'{% endif %}>COACHING</a></li>
             <li><a href='{{ site.baseurl }}/listings' {% if current[1] == 'listings' %}class='active'{% endif %}>LISTINGS</a></li>
-            <li><a href='{{ site.baseurl }}/' {% if current[1] == nil %}class='active'{% endif %}>HOME</a></li>
+            <li><a href='{{ site.baseurl }}/' {% if current[1] == nil or current[1] == ''%}class='active'{% endif %}>HOME</a></li>
           </ul>
         </div>
       </div>
