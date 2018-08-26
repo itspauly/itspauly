@@ -48,10 +48,10 @@
         <div class="top-bar top-desktop-nav">
           <ul class="menu align-right">
             {% assign current = page.url | downcase | split: '/' %}
-            <li><a href='/contact' {% if current[1] == 'contact' %}class='active'{% endif %}>CONTACT</a></li>
+            <li><a href='{{ site.baseurl }}/contact' {% if current[1] == 'contact' %}class='active'{% endif %}>CONTACT</a></li>
             <li><a href='/coaching' {% if current[1] == 'coaching' %}class='active'{% endif %}>COACHING</a></li>
             <li><a href='/listings' {% if current[1] == 'listings' %}class='active'{% endif %}>LISTINGS</a></li>
-            <li><a href='/' {% if current[1] == nil %}class='active'{% endif %}>HOME</a></li>
+            <li><a href='{{ site.baseurl }}/' {% if current[1] == nil %}class='active'{% endif %}>HOME</a></li>
           </ul>
         </div>
       </div>
