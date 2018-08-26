@@ -1,0 +1,353 @@
+---
+---
+
+@charset "UTF-8";
+
+@import "foundation.css";
+@import "foundation_and_overrides.css";
+@import "foundation-icons.css";
+
+
+//colors
+$color_mine_shaft_approx: #333333;
+$color_jaguar_approx: #03040b;
+$color_biscay_approx: #212d68;
+$white: white;
+$color_puerto_rico_approx: #4db6ad;
+$color_lightning_yellow_approx: #ffbb17;
+$color_gamboge_approx: #e29e00;
+$color_mirage_approx: #0d122a;
+$black_70: rgba(0, 0, 0, 0.7);
+$color_crusta_approx: #f78536;
+$color_mystic_approx: #dfebed;
+$color_iron_approx: #d6d8db;
+$color_dove_gray_approx: #727272;
+$color_pickled_bluewood_approx: #2b4450;
+$color_bismark_approx: #497285;
+$white_30: rgba(255, 255, 255, 0.3);
+
+//fonts
+$font_0: Quicksand;
+
+//urls
+$url_0: url(/assets/img/30a.jpg);
+$url_1: url(/assets/img/fourway.jpg);
+
+//@extend-elements
+//original selectors
+//.button:hover, .button:focus
+%extend_1 {
+  border-color: $color_gamboge_approx;
+  color: $white;
+  background-color: $color_gamboge_approx;
+}
+
+//original selectors
+//.button.teal-btn:hover, .button.teal-btn:focus
+%extend_2 {
+  border-color: $color_mirage_approx !important;
+  color: $white !important;
+  background-color: $color_mirage_approx !important;
+}
+
+
+body {
+  font-family: $font_0;
+  margin: 0;
+  padding: 0;
+  background: $color_mine_shaft_approx;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.blue-bg-grad {
+  background: $color_jaguar_approx;
+  background: linear-gradient($color_jaguar_approx, $color_biscay_approx) !important;
+}
+#main-navigation {
+  background: $color_biscay_approx;
+  background: linear-gradient($color_biscay_approx, $color_jaguar_approx);
+  color: $white;
+  ul {
+    background: transparent !important;
+  }
+  li {
+    background: transparent !important;
+  }
+  div {
+    background: transparent !important;
+  }
+}
+.main-nav-logo-img {
+  height: 100px;
+  width: auto;
+  margin-left: 125px;
+}
+.header-social {
+  margin-left: 120px;
+  i {
+    color: $color_puerto_rico_approx;
+    margin-left: 7px;
+    font-size: 22px;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+.button {
+  &:hover {
+    @extend %extend_1;
+  }
+  &:focus {
+    @extend %extend_1;
+  }
+  &.teal-btn {
+    border-color: $color_puerto_rico_approx !important;
+    background-color: $color_puerto_rico_approx !important;
+    color: $white !important;
+    &:hover {
+      @extend %extend_2;
+    }
+    &:focus {
+      @extend %extend_2;
+    }
+  }
+  &.hollow.secondary {
+    &:hover {
+      border-color: $color_lightning_yellow_approx;
+      color: $white;
+    }
+    &:focus {
+      border-color: $color_lightning_yellow_approx;
+      color: $white;
+    }
+  }
+}
+h1 {
+  font-family: $font_0;
+}
+h2 {
+  font-family: $font_0;
+}
+h3 {
+  font-family: $font_0;
+}
+h4 {
+  font-family: $font_0;
+}
+h5 {
+  font-family: $font_0;
+}
+h6 {
+  font-family: $font_0;
+}
+.display-table {
+  display: table !important;
+}
+.fp-ol {
+  height: 600px !important;
+  width: 100% !important;
+}
+.bt-fp-ol {
+  width: 100% !important;
+}
+.va-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+.frontpage-overlay {
+  background-color: $black_70 !important;
+  min-height: 100% !important;
+  width: 100% !important;
+}
+.frontpage-bt-overlay {
+  background-color: $black_70 !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  padding: 32px;
+  width: 100%;
+}
+.front-logo {
+  width: 25% !important;
+  height: auto;
+}
+.intro {
+  background: $url_0 no-repeat center center;
+  background-size: cover;
+  min-height: 700px;
+  color: $white;
+  padding: 30px;
+  text-align: center;
+  background-position: bottom center;
+}
+.about {
+  background-color: $white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+.orange {
+  color: $color_crusta_approx;
+}
+.light-blue-grey {
+  color: $color_mystic_approx;
+}
+.grey-bg {
+  background-color: $color_iron_approx;
+}
+.blue {
+  color: $color_mirage_approx;
+}
+.dark-blue {
+  color: $color_biscay_approx !important;
+}
+.dark-grey {
+  color: $color_dove_gray_approx;
+}
+.dark-grey-bg {
+  background-color: $color_dove_gray_approx;
+}
+.orange-bg {
+  background-color: $color_crusta_approx;
+}
+.light-blue-grey-bg {
+  background-color: $color_mystic_approx;
+}
+.blue-bg {
+  background-color: $color_mirage_approx;
+}
+.dark-blue-bg {
+  background-color: $color_biscay_approx !important;
+}
+.gold {
+  color: $color_lightning_yellow_approx;
+}
+.gold-bg {
+  background-color: $color_lightning_yellow_approx;
+}
+.teal {
+  color: $color_puerto_rico_approx;
+}
+.teal-bg {
+  background-color: $color_puerto_rico_approx;
+}
+.teal-lbl {
+  background: $color_puerto_rico_approx !important;
+}
+.team {
+  background-color: $white;
+  margin: 0;
+  padding: 20px;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 16px;
+  img {
+    margin-bottom: 30px;
+  }
+  h5 {
+    color: $color_puerto_rico_approx;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+.info {
+  background-color: $color_pickled_bluewood_approx;
+  color: $white;
+  padding: 20px;
+  text-align: center;
+}
+.blog {
+  background-color: $white;
+  margin: 0;
+  padding: 20px;
+  .label {
+    margin-bottom: 5px;
+  }
+}
+.blog-item {
+  margin-bottom: 10px;
+  img {
+    margin-bottom: 10px;
+  }
+  h5 {
+    color: $color_bismark_approx;
+  }
+}
+.subscribe {
+  background-color: $color_bismark_approx;
+  color: $white;
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.map {
+  background-color: $color_pickled_bluewood_approx;
+  color: $white;
+  min-height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.contact {
+  background-image: $url_1;
+  background-position: center center;
+  min-height: 200px;
+  padding: 20px;
+  color: $white;
+  text-align: center;
+}
+.footer {
+  background-color: $white;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.footer-logo {
+  margin-top: 20px;
+  width: 15% !important;
+  height: auto;
+}
+#flagvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+}
+.top-desktop-nav {
+  ul {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  li {
+    padding: 20px;
+    a {
+      border: transparent 1px solid;
+      color: $white;
+      font-weight: bold;
+      &:hover {
+        border: $white 1px solid;
+        color: $color_puerto_rico_approx;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: inset 0 0 100px 100px $white_30;
+      }
+    }
+  }
+}
+.active {
+  border: $white 1px solid !important;
+}
+.footer-social i {
+  color: $color_biscay_approx;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  &:hover {
+    color: $color_puerto_rico_approx;
+  }
+}

@@ -1,3 +1,8 @@
+---
+---
+
+@charset "UTF-8";
+
 //  Foundation for Sites Settings
 //  -----------------------------
 //
@@ -60,7 +65,17 @@
 //  55. Top Bar
 //  56. Xy Grid
 
-@import 'util/util';
+// Color manipulation
+@import 'util/color';
+
+// Selector generation
+@import 'util/selector';
+
+// Unit manipulation and conversion
+@import 'util/unit';
+
+// Value checking and extraction
+@import 'util/value';
 
 // 1. Global
 // ---------
